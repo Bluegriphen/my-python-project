@@ -13,3 +13,59 @@ Class is a blueprint for creating objects.
     #creating object(instance)
     s1 = Student()
     print(s1.name)
+
+
+
+__init__function
+Constructor
+All Classes have a function called __init__(), which is always executed when the class is being initiated.
+
+#creating class                                   #creating object
+class Student:
+    def __init__(self, fullname):                  s1 = Student("Karan")
+        self.name= fullname                        print(s1.name)
+
+
+"This self perameter is a reference to the current instance of the class, and is ussed to across variable that belongs to the class."
+
+
+
+Class & Instance Attributes 
+
+Class.Attr
+obj.Attr
+
+
+
+Methods
+Methods are functions that belong to objects.
+
+#creating classclass Student:                             #creating object
+    def __init__(self, fullname):                         s1 = Student("Karan")
+        self.name = fullname                              s1.hello()
+    
+    def hello(self):
+        print("hello", self.name)
+
+
+
+Static Methods
+Methods that don't use the self perameter (work at class level)
+
+class Student:
+    @staticmethod #decorator
+    def collage():
+        print("Abc Collages")
+
+
+
+"Decordors allow us to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it."
+
+
+important
+Abstraction
+Hiding the implementation details of a class and only showing the essential features to the user.
+
+
+Encapsulation
+Wrapping data and functions into a single unit(object).
