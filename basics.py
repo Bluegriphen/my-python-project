@@ -1,1 +1,5 @@
-print("Hello, Priyanka! Welcome to Python basics.")
+class Car: 
+    color ="Blue"
+
+car1 = Car()
+print(car1.)
